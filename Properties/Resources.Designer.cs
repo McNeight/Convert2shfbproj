@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SandcastleBuilder.Utils.Properties {
+namespace Convert2shfbproj.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SandcastleBuilder.Utils.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SandcastleBuilder.Utils.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Convert2shfbproj.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,44 +57,6 @@ namespace SandcastleBuilder.Utils.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;Project DefaultTargets=&quot;Build&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot; ToolsVersion=&quot;4.0&quot;&gt;
-        ///	&lt;PropertyGroup&gt;
-        ///		&lt;!-- The configuration and platform will be used to determine which assemblies to include from solution and
-        ///				 project documentation sources --&gt;
-        ///		&lt;Configuration Condition=&quot; &apos;$(Configuration)&apos; == &apos;&apos; &quot;&gt;Debug&lt;/Configuration&gt;
-        ///		&lt;Platform Condition=&quot; &apos;$(Platform)&apos; == &apos;&apos; &quot;&gt;AnyCPU&lt;/Platform&gt;
-        ///
-        ///		&lt;SchemaVersion&gt;2.0&lt;/SchemaVersion&gt;
-        ///		&lt;ProjectGuid&gt;$guid1$&lt;/ProjectGuid&gt;
-        ///		&lt;SHFBS [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string ProjectTemplate {
-            get {
-                return ResourceManager.GetString("ProjectTemplate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SandcastleLogo {
-            get {
-                object obj = ResourceManager.GetObject("SandcastleLogo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Spinner {
-            get {
-                object obj = ResourceManager.GetObject("Spinner", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

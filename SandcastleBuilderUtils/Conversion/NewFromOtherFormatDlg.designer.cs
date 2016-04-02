@@ -38,7 +38,6 @@ namespace SandcastleBuilder.Utils.Conversion
             this.btnConvert = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.cboProjectFormat = new System.Windows.Forms.ComboBox();
-            this.btnHelp = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.epErrors = new System.Windows.Forms.ErrorProvider(this.components);
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +53,7 @@ namespace SandcastleBuilder.Utils.Conversion
             // 
             this.txtProjectFile.Location = new System.Drawing.Point(221, 148);
             this.txtProjectFile.Name = "txtProjectFile";
-            this.txtProjectFile.Size = new System.Drawing.Size(452, 22);
+            this.txtProjectFile.Size = new System.Drawing.Size(452, 20);
             this.txtProjectFile.TabIndex = 4;
             // 
             // label1
@@ -81,7 +80,7 @@ namespace SandcastleBuilder.Utils.Conversion
             // 
             this.txtNewProjectFolder.Location = new System.Drawing.Point(221, 191);
             this.txtNewProjectFolder.Name = "txtNewProjectFolder";
-            this.txtNewProjectFolder.Size = new System.Drawing.Size(452, 22);
+            this.txtNewProjectFolder.Size = new System.Drawing.Size(452, 20);
             this.txtNewProjectFolder.TabIndex = 7;
             // 
             // label2
@@ -106,7 +105,7 @@ namespace SandcastleBuilder.Utils.Conversion
             // 
             // btnConvert
             // 
-            this.btnConvert.Location = new System.Drawing.Point(12, 246);
+            this.btnConvert.Location = new System.Drawing.Point(540, 246);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(88, 32);
             this.btnConvert.TabIndex = 9;
@@ -139,19 +138,8 @@ namespace SandcastleBuilder.Utils.Conversion
             "Microsoft Sandcastle Example GUI"});
             this.cboProjectFormat.Location = new System.Drawing.Point(221, 101);
             this.cboProjectFormat.Name = "cboProjectFormat";
-            this.cboProjectFormat.Size = new System.Drawing.Size(274, 24);
+            this.cboProjectFormat.Size = new System.Drawing.Size(274, 21);
             this.cboProjectFormat.TabIndex = 2;
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Location = new System.Drawing.Point(540, 246);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(88, 32);
-            this.btnHelp.TabIndex = 10;
-            this.btnHelp.Text = "&Help";
-            this.toolTip1.SetToolTip(this.btnHelp, "View help for this form");
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // epErrors
             // 
@@ -194,7 +182,7 @@ namespace SandcastleBuilder.Utils.Conversion
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(386, 25);
+            this.label4.Size = new System.Drawing.Size(321, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Create New Project From Other Format";
             // 
@@ -204,7 +192,6 @@ namespace SandcastleBuilder.Utils.Conversion
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(734, 290);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.cboProjectFormat);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancel);
@@ -245,7 +232,6 @@ namespace SandcastleBuilder.Utils.Conversion
         private System.Windows.Forms.ErrorProvider epErrors;
         private System.Windows.Forms.ComboBox cboProjectFormat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;

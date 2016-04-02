@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -21,7 +21,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -47,9 +47,10 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
     <DocumentationFile>bin\Debug\Sandcastle.Core.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\SandcastleTools.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -59,6 +60,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Sandcastle.Core.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework" />
@@ -95,14 +97,6 @@
     <Compile Include="BuildAssembler\SyntaxGenerator\SyntaxGeneratorTemplate.cs" />
     <Compile Include="BuildAssembler\SyntaxGenerator\SyntaxWriter.cs" />
     <Compile Include="ComponentUtilities.cs" />
-    <Compile Include="CommandLine\BaseOption.cs" />
-    <Compile Include="CommandLine\BooleanOption.cs" />
-    <Compile Include="CommandLine\ListOption.cs" />
-    <Compile Include="CommandLine\OptionCollection.cs" />
-    <Compile Include="CommandLine\ParseArgumentsResult.cs" />
-    <Compile Include="CommandLine\ParseResult.cs" />
-    <Compile Include="CommandLine\StringOption.cs" />
-    <Compile Include="CommandLine\SwitchOption.cs" />
     <Compile Include="ConsoleApplication.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Frameworks\AssemblyDetails.cs" />
@@ -153,9 +147,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dependencies.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\ConfigurationEditorDlg.resx">

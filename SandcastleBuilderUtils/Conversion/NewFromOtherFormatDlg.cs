@@ -104,7 +104,14 @@ namespace SandcastleBuilder.Utils.Conversion
         {
             using(OpenFileDialog dlg = new OpenFileDialog())
             {
-                dlg.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                if (txtProjectFile.Text == "")
+                {
+                    dlg.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                }
+                else
+                {
+                    dlg.InitialDirectory = Path.GetDirectoryName(txtProjectFile.Text);
+                }
 
                 switch(cboProjectFormat.SelectedIndex)
                 {
@@ -155,7 +162,14 @@ namespace SandcastleBuilder.Utils.Conversion
             using(FolderBrowserDialog dlg = new FolderBrowserDialog())
             {
                 dlg.Description = "Select the folder for the new project";
-                dlg.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                if (txtNewProjectFolder.Text == "")
+                {
+                    dlg.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                }
+                else
+                {
+                    dlg.SelectedPath = txtNewProjectFolder.Text;
+                }
 
                 // If selected, set the new folder
                 if(dlg.ShowDialog() == DialogResult.OK)
@@ -287,16 +301,6 @@ namespace SandcastleBuilder.Utils.Conversion
                 if(converter != null)
                     converter.Dispose();
             }
-        }
-
-        /// <summary>
-        /// View help for this form
-        /// </summary>
-        /// <param name="sender">The sender of the event</param>
-        /// <param name="e">The event arguments</param>
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            Utility.ShowHelpTopic("f68822d2-97ba-48da-a98b-46747983b4a0");
         }
         #endregion
     }
